@@ -1,22 +1,22 @@
 import React, { Component } from 'react'
 
 export default class UpAndDown extends Component {
-    constructor(props) {
-        super(props);
+    // constructor(props) {
+    //     super(props);
 
-        this.state = {
+    //     this.state = {
 
-        }
-    }
+    //     }
+    // }
 
-    up() {
+    // up() {
 
-    }
+    // }
 
-    down() {
+    // down() {
 
-    }
-    
+    // }
+
     render() {
         return (
             <div className="up-and-down-wrapper">
