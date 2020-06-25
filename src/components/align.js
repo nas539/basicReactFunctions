@@ -28,13 +28,13 @@ export default class Align extends Component {
                     {this.props.text}
                 </div>
                 <div className="buttons=wrapper">
-                    <button onClick={() => leftAlign()}>
+                    <button onClick={() => this.leftAlign()}>
                         Left
                     </button>
-                    <button onClick={() => centerAlign()}>
+                    <button onClick={() => this.centerAlign()}>
                         Center
                     </button>
-                    <button onClick={() => rightAlign()}>
+                    <button onClick={() => this.rightAlign()}>
                         Right
                     </button>
 
