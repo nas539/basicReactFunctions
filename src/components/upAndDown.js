@@ -28,21 +28,21 @@ export default class UpAndDown extends Component {
     render() {
         return (
             <div className="up-and-down-wrapper">
-                <div className="up-btn">
+              
                     <button onClick={() => this.up()}>
                         Up
                     </button>
-                </div> 
+                
                 
                 <div className="number-wrapper">
                         {this.state.text}
                 </div>
 
-                <div className="down-btn">
+                
                     <button onClick={() => this.down()}>
                         Down
                     </button>
-                </div> 
+               
                 
             </div>
         )

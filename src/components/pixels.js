@@ -1,29 +1,43 @@
 import React, { Component } from 'react'
 
 export default class Pixels extends Component {
-    // constructor(props) {
-    //     super(props);
+    constructor() {
+        super();
 
-    //     this.state = {
+        this.state = {
+            number: 20,
+            increaseBy: 1
+        }
 
-    //     }
-    // }
+        this.bigger = this.bigger.bind(this);
+        this.smaller = this.smaller.bind(this);
+    }
 
-    // bigger() {
+    bigger() {
 
-    // }
+    }
 
-    // smaller() {
+    smaller() {
 
-    // }
+    }
 
     render() {
         return (
             <div className="pixels-wrapper">
                 <form className="pixels-form">
-                    <h4>
-                        12px
-                    </h4>
+                    
+                    <div className="pixel-number-wrapper">
+                        {this.state.number}px
+                    </div>
+                    <input placeholder="Increase by number">
+
+                    </input>
+                    <button className="btn" onClick={() => this.bigger()}>
+                        Bigger
+                    </button>
+                    <button className="btn" onClick={() => this.smaller()}>
+                        Smaller
+                    </button>
                     
 
 

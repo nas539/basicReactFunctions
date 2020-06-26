@@ -103,3 +103,30 @@ body {
     border: 2px solid black;
     background-color: lightblue;
 }
+
+.up-and-down-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    .number-wrapper {
+        font-size: 3em;
+    }
+
+    button {
+        height: 50%;
+        width: 50%;
+        font-size: 2em;
+
+        
+
+        &:hover {
+            outline: none;
+            -webkit-box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
+            box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
+        }
+
+    }
+}
