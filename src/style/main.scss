@@ -45,8 +45,8 @@ body {
         border-bottom: 2px solid transparent;
 
         &:hover {
-            color: darkblue;
-            border-bottom: 2px solid darkblue;
+            color: darkred;
+            border-bottom: 2px solid darkred;
         }
       }
 
@@ -219,8 +219,8 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: 400;
-    font-size: 3em;
-    color: red;
+    font-size: 4em;
+    color: darkred;
     
 }
 
