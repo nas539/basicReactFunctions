@@ -5,6 +5,7 @@ export default class Toggle extends Component {
         super(props);
 
         this.state = {
+            text: "Toggle Me!",
             display: false,
         }
     }
@@ -19,7 +20,7 @@ export default class Toggle extends Component {
         return (
             <div className="toggle-wrapper">
                 <div className="text-wrapper"> 
-                 {!this.state.display && this.props.text}
+                 {!this.state.display && this.state.text}
                 </div>  
                 <button 
                  onClick={() => this.toggle()}>
