@@ -10,9 +10,7 @@ export default class App extends Component {
   render() {
     return (
       <div className='app'>
-        <Align 
-         text="Align Me"
-        />
+        <Align />
 
         <Toggle 
          text="Toggle Me!"
