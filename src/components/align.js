@@ -1,40 +1,40 @@
 import React, { Component } from 'react'
 
 export default class Align extends Component {
-    constructor(props) {
-        super(props);
+    // constructor(props) {
+    //     super(props);
 
-        this.state = {
-            display: false
-        }
-    }
+    //     this.state = {
+    //         displayLeft: false,
+    //         displayCenter: true,
+    //         displayRight: false
+    //     }
+    // }
 
-    leftAlign() {
-        this.setState((displayState) => ({
-            displayLeft: displayState.displayLeft,
-            displayCenter: displayState.displayCenter,
-            displayRight: displayState.displayRight
-        }))
+    // leftAlign() {
+    //     this.setState({
+    //         displayLeft: this.props.style.{{visibility: hidden}},
+    //         displayCenter: {visibility: visible},
+    //         displayRight: {visibility: hidden}
+    //     })
 
-    }
+    // }
 
-    centerAlign() {
-        this.setState((displayState) => ({
-            displayCenter: displayState.displayCenter,
-            displayRight: displayState.displayRight,
-            displayLeft: displayState.displayLeft,
-        }))
+    // centerAlign() {
+    //     this.setState({
+            
+    //     })
         
-    }
+    // }
 
-    rightAlign() {
-        this.setState((displayState) => ({
-            displayRight: displayState.displayRight,
-            displayCenter: displayState.displayCenter,
-            displayLeft: displayState.displayLeft
-        }))
+    // rightAlign() {
+    //     this.setState((displayState) => ({
+    //         displayLeft: {visibility: hidden},
+    //         displayCenter: {visibility: visible},
+    //         displayRight: {visibility: hidden}
+    //     }))
         
-    }
+    // }
 
     render() {
         return (
@@ -42,13 +42,16 @@ export default class Align extends Component {
 
                 <div className="align-text-wrapper">
                      <div className="left">
-                        {this.state.displayLeft && this.props.text}
+                        {/* {!this.state.displayLeft && this.props.text && } */}
+                        {this.props.text}
                     </div>
                     <div className="center">
-                        {this.state.displayCenter && this.props.text}
+                        {/* {!this.state.displayCenter && this.props.text && this.props.style} */}
+                        {this.props.text}
                     </div>
                     <div className="right">
-                        {this.state.displayRight && this.props.text}
+                        {/* {!this.state.displayRight && this.props.text && this.props.style} */}
+                        {this.props.text}
                     </div>
                 </div>
                 <div className="buttons-wrapper" onClick={() => this.delete}>

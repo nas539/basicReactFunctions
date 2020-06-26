@@ -1,21 +1,29 @@
 import React, { Component } from 'react'
 
 export default class UpAndDown extends Component {
-    // constructor(props) {
-    //     super(props);
+    constructor() {
+        super();
 
-    //     this.state = {
+        this.state = {
+            text: 0
+        }
+        this.up = this.up.bind(this)
+        this.down = this.down.bind(this)
+    }
 
-    //     }
-    // }
+    up() {
+        this.setState({
+            text: this.state.text + 1
+        })
+        
+    }
 
-    // up() {
-
-    // }
-
-    // down() {
-
-    // }
+    down() {
+        this.setState({
+            text: this.state.text - 1
+        })
+        
+    }
 
     render() {
         return (
@@ -27,9 +35,7 @@ export default class UpAndDown extends Component {
                 </div> 
                 
                 <div className="number-wrapper">
-                    <h4>
-                        0
-                    </h4>
+                        {this.state.text}
                 </div>
 
                 <div className="down-btn">
